@@ -1,0 +1,108 @@
+/* Parametros del header */
+.navbar {
+  width: 100%;
+    position: fixed;
+    overflow: hidden;
+    padding: 20px 10px;
+    margin: 0;
+    z-index:100;
+    border-bottom: 1px solid var(--base1-t);
+    transition: all 0.5s;
+}
+
+
+#logo {
+  width: 50px;
+  height: 50px;
+  left: 0 !important ;
+}
+
+
+@media (max-width: 991.5px) { 
+  #logo{display: none;}
+
+}
+
+
+.animacionScroll{
+  background: rgba(255, 255, 255, 0.777);
+  padding: 10px 5px;
+  transition: all 0.5s;
+  border-radius: 0 0 1em 1em;
+  border-bottom: 0;
+
+}
+
+
+#bannerImg{
+  transition: all 2s;
+  transition: ease-in;
+  animation-name: bannerImgAnimation;
+  animation-duration: 8s;
+  animation-iteration-count: 1;
+
+}
+
+
+@keyframes bannerImgAnimation {
+  10%{transform: scale(1.0)}
+  60%{  transform: scale(1.2)}
+  100%{transform: scale(1.0);} 
+}
+
+
+
+.modal{
+  padding: 0 !important;
+  animation-name: modalAnimation;
+  animation-duration: 800ms;
+  animation-iteration-count: 1;
+  transition: all 500ms;
+
+  
+ }
+
+
+ .modal-dialog {
+   max-width: 100% !important;
+   height: 100%;
+   padding: 0;
+   margin: 0;
+  
+  
+ }
+
+ @keyframes modalAnimation {
+  1%{    width: 0%;
+    height: 0%;
+    border-radius: 0 50% 200% 80%;
+  
+    }
+ 
+  100%{    width: 100%;
+    height: 100%;
+    border-radius: 0 0 0 0;
+    } 
+}
+ 
+ .modal-content {
+   border-radius: 0 !important;
+   height: 100%;
+ 
+   background-color: var(--color1-t) ;
+   border: 0px solid;
+   
+ }
+
+ #menuList  {
+  height: 90%;
+  width: 40%;
+  background-color: var(--color5) !important ;
+}
+
+#menuListDetail {
+  margin-inline: 5%;
+
+  height: 90%;
+  width: 50%;
+}

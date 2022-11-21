@@ -2,8 +2,20 @@
 @import "variables/variables";
 
 /* header + navbar  */
-@import "components/header/header";
+@import "styles/header/header";
 
 /* footer */
-@import "components/footer/footer";
+@import "styles/footer/footer";
 
+
+
+/* starrank */
+@import "styles/components/starrank";
+
+
+
+/* scr0II*/
+*::-webkit-scrollbar {
+    width: 0px;
+  }
+  

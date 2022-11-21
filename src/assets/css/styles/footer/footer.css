@@ -1,0 +1,11 @@
+.footer {
+ background-image: url("../../../images/footer.svg") ;
+ background-size: cover ;
+ transition: all 2000ms;
+
+  }
+
+  #forma1{
+    background-color: red;
+  }
+
